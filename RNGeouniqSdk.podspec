@@ -9,7 +9,7 @@ s.summary        = package['description']
 s.description    = package['description']
 s.license        = package['license']
 s.author         = package['author']
-s.homepage       = package['homepage']
+s.homepage       = "http://www.geouniq.com"
 s.source         = { git: 'https://github.com/paologeouniq/RNGeoUniqSDK.git', tag: s.version }
 
 s.requires_arc   = true
