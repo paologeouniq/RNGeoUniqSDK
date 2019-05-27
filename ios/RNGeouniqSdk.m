@@ -1,8 +1,6 @@
 
 #import "RNGeouniqSdk.h"
 
-
-
 @implementation RNGeouniqSdk
 	
 - (dispatch_queue_t)methodQueue
