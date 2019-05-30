@@ -1,0 +1,11 @@
+framework module GeoUniq {
+  umbrella header "GeoUniq.h"
+
+  export *
+  module * { export * }
+}
+
+module GeoUniq.Swift {
+    header "GeoUniq-Swift.h"
+    requires objc
+}

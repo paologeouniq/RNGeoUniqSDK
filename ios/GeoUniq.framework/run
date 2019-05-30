@@ -1,0 +1,25 @@
+#  run.sh
+#  GeoUniq
+#
+#  Created by Paolo Donato on 28/03/17.
+#  Copyright © 2017 GeoUniq. All rights reserved.
+
+set -e
+MYPATH="GeoUniq.framework"
+
+if [ -d "${MYPATH}" ]
+then
+if [ "${DEPLOYMENT_POSTPROCESSING}" == "YES" ] && [ "${DEPLOYMENT_LOCATION}" == "YES" ]
+then
+lipo -thin "armv7" "${MYPATH}/GeoUniq" -output "${MYPATH}/GeoUniq-7"
+lipo -thin "arm64" "${MYPATH}/GeoUniq" -output "${MYPATH}/GeoUniq-64"
+mv "${MYPATH}/GeoUniq" "${MYPATH}/../"
+lipo -create "${MYPATH}/GeoUniq-7" "${MYPATH}/GeoUniq-64" -output "${MYPATH}/GeoUniq"
+rm "${MYPATH}/GeoUniq-7" "${MYPATH}/GeoUniq-64"
+else
+if [ -e "${MYPATH}/../GeoUniq" ]
+then
+mv -f "${MYPATH}/../GeoUniq" "${MYPATH}/GeoUniq"
+fi
+fi
+fi
