@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNGeouniqSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNGeouniqSdk.m */; };
-		E52105D3229FCF6F001D2F41 /* GeoUniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52105D2229FCF6F001D2F41 /* GeoUniq.framework */; };
-		E5210620229FDE17001D2F41 /* GeoUniq.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E52105D2229FCF6F001D2F41 /* GeoUniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5D1207622A5735000B4706A /* GeoUniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D1207522A5735000B4706A /* GeoUniq.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +18,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 10;
 			files = (
-				E5210620229FDE17001D2F41 /* GeoUniq.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,7 +27,7 @@
 		134814201AA4EA6300B7C361 /* libRNGeouniqSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNGeouniqSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNGeouniqSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGeouniqSdk.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNGeouniqSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGeouniqSdk.m; sourceTree = "<group>"; };
-		E52105D2229FCF6F001D2F41 /* GeoUniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoUniq.framework; sourceTree = "<group>"; };
+		E5D1207522A5735000B4706A /* GeoUniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoUniq.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E52105D3229FCF6F001D2F41 /* GeoUniq.framework in Frameworks */,
+				E5D1207622A5735000B4706A /* GeoUniq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,19 +53,11 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				E5D1207522A5735000B4706A /* GeoUniq.framework */,
 				B3E7B5881CC2AC0600A0062D /* RNGeouniqSdk.h */,
 				B3E7B5891CC2AC0600A0062D /* RNGeouniqSdk.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				E587A2FB2297E6BE005D6FC4 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		E587A2FB2297E6BE005D6FC4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E52105D2229FCF6F001D2F41 /* GeoUniq.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
