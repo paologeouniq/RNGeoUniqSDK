@@ -13,7 +13,7 @@ s.homepage       = "http://www.geouniq.com"
 s.source         = { git: 'https://github.com/paologeouniq/RNGeoUniqSDK.git', tag: s.version }
 
 s.requires_arc   = true
-s.platform       = :ios, '11.0'
+s.platform       = :ios, '9.0'
 
 s.preserve_paths = 'LICENSE', 'README.md', 'package.json', 'index.js'
 s.source_files   = './*.{h,m}'
