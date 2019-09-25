@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNGeouniqSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNGeouniqSdk.m */; };
-		E5D1207622A5735000B4706A /* GeoUniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D1207522A5735000B4706A /* GeoUniq.framework */; };
+		B3E7B58A1CC2AC0600A0062D /* RNGeouniq.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNGeouniq.m */; };
+		E5F0121B229566150030C88F /* GeoUniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F0121A229566150030C88F /* GeoUniq.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -16,7 +16,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 16;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNGeouniqSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNGeouniqSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNGeouniqSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGeouniqSdk.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNGeouniqSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGeouniqSdk.m; sourceTree = "<group>"; };
-		E5D1207522A5735000B4706A /* GeoUniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoUniq.framework; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libRNGeouniq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNGeouniq.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5881CC2AC0600A0062D /* RNGeouniq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGeouniq.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNGeouniq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGeouniq.m; sourceTree = "<group>"; };
+		E5F0121A229566150030C88F /* GeoUniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoUniq.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D1207622A5735000B4706A /* GeoUniq.framework in Frameworks */,
+				E5F0121B229566150030C88F /* GeoUniq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +45,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNGeouniqSdk.a */,
+				134814201AA4EA6300B7C361 /* libRNGeouniq.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,19 +53,27 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				E5D1207522A5735000B4706A /* GeoUniq.framework */,
-				B3E7B5881CC2AC0600A0062D /* RNGeouniqSdk.h */,
-				B3E7B5891CC2AC0600A0062D /* RNGeouniqSdk.m */,
+				B3E7B5881CC2AC0600A0062D /* RNGeouniq.h */,
+				B3E7B5891CC2AC0600A0062D /* RNGeouniq.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				E5B913C122A6B30200584CD2 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		E5B913C122A6B30200584CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5F0121A229566150030C88F /* GeoUniq.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNGeouniqSdk */ = {
+		58B511DA1A9E6C8500147676 /* RNGeouniq */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNGeouniqSdk" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNGeouniq" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -75,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = RNGeouniqSdk;
+			name = RNGeouniq;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNGeouniqSdk.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNGeouniq.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -86,6 +94,9 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -94,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNGeouniqSdk" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNGeouniq" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -107,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNGeouniqSdk */,
+				58B511DA1A9E6C8500147676 /* RNGeouniq */,
 			);
 		};
 /* End PBXProject section */
@@ -117,7 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNGeouniqSdk.m in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RNGeouniq.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,8 +220,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -220,7 +231,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNGeouniqSdk;
+				PRODUCT_NAME = RNGeouniq;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -229,8 +240,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,7 +251,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNGeouniqSdk;
+				PRODUCT_NAME = RNGeouniq;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -248,7 +259,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNGeouniqSdk" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNGeouniq" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -257,7 +268,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNGeouniqSdk" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNGeouniq" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

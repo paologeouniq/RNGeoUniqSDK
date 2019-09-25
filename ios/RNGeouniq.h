@@ -5,9 +5,10 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-#import <GeoUniq/GeoUniq-Swit.h>
+@import GeoUniq;
 
-@interface RNGeouniqSdk : NSObject <RCTBridgeModule>
+
+@interface RNGeouniq : NSObject <RCTBridgeModule>
 
 @end
   

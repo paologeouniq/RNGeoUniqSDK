@@ -1,28 +1,31 @@
 
-package com.geouniq.rngeouniq;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+package com.geouniq;
 
 import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
-import com.facebook.react.bridge.JavaScriptModule;
-public class RNGeouniqSdkPackage implements ReactPackage {
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class GeouniqPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNGeouniqSdkModule(reactContext));
+        List<NativeModule> nativeModules = new ArrayList<>();
+        nativeModules.add(new GeouniqModule(reactContext));
+        return nativeModules;
     }
 
     // Deprecated from RN 0.47
     public List<Class<? extends JavaScriptModule>> createJSModules() {
-      return Collections.emptyList();
+        return Collections.emptyList();
     }
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-      return Collections.emptyList();
+        return Collections.emptyList();
     }
 }
