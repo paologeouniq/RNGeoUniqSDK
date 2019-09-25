@@ -1,6 +1,6 @@
 {
   "name": "react-native-geouniq-sdk-beta1",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "React native module for Geouniq SDK",
   "main": "index.js",
   "scripts": {
